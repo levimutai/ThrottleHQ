@@ -1,0 +1,49 @@
+{
+  "engines": [
+    {
+      "id": 1,
+      "name": "Hellcat V8",
+      "type": "V8",
+      "horsepower": 707,
+      "torque": 650,
+      "description": "A supercharged 6.2L V8 engine with massive power, perfect for muscle cars.",
+      "image_url": "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 2,
+      "name": "EcoBoost V6",
+      "type": "V6",
+      "horsepower": 450,
+      "torque": 510,
+      "description": "A turbocharged 3.5L V6 engine, known for its efficiency and performance.",
+      "image_url": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 3,
+      "name": "Tesla Electric Motor",
+      "type": "Electric",
+      "horsepower": 500,
+      "torque": 700,
+      "description": "A high-performance electric motor for modern EVs.",
+      "image_url": "https://images.unsplash.com/photo-1511918984145-48de785d4c4e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 4,
+      "name": "Turbocharged Inline-4",
+      "type": "Inline-4",
+      "horsepower": 320,
+      "torque": 295,
+      "description": "A compact, turbocharged 2.0L inline-4 engine, great for sporty compacts.",
+      "image_url": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": 5,
+      "name": "Hybrid Powertrain",
+      "type": "Hybrid",
+      "horsepower": 200,
+      "torque": 250,
+      "description": "A fuel-efficient hybrid engine combining gas and electric power.",
+      "image_url": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+    }
+  ]
+}

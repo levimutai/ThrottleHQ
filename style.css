@@ -1,0 +1,115 @@
+/* Import a modern Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Set a full-page background image with a dark overlay for readability */
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background:
+    linear-gradient(rgba(34,34,59,0.7), rgba(34,34,59,0.7)),
+    url('https://images.pexels.com/photos/190537/pexels-photo-190537.jpeg?auto=compress&w=1500&q=80') no-repeat center center fixed;
+  background-size: cover;
+  color: #f8f8f8;
+}
+
+/* Glassmorphism effect for main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 32px;
+  background: rgba(255,255,255,0.13);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.18);
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f8f8f8;
+  text-shadow: 0 2px 8px #22223b;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-top: 8px;
+}
+
+/* Engine list styles */
+#engine-listings ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+#engine-listings li {
+  background: rgba(255,255,255,0.18);
+  border-radius: 12px;
+  padding: 20px 24px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  color: #22223b;
+  font-weight: 600;
+}
+
+#engine-listings li:hover {
+  background: #4a4e69;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(34,34,59,0.18);
+}
+
+/* Section titles */
+h2 {
+  margin: 24px 0 16px 0;
+  font-size: 1.6rem;
+  color: #f8f8f8;
+  text-shadow: 0 1px 4px #22223b;
+}
+
+/* Buttons */
+button, .btn {
+  background: #22223b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.10);
+}
+
+button:hover, .btn:hover {
+  background: #c9ada7;
+  color: #22223b;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 700px) {
+  main {
+    padding: 12px;
+  }
+  #engine-listings ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
