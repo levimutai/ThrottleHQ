@@ -28,17 +28,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function fetchEngines() {
-  fetch('http://localhost:3000/engines')
-    .then(response => response.json())
-    .then(engines => {
-      allEngines = engines;
-      renderEngineList(engines);
-    })
-    .catch(error => {
-      console.error('Error fetching engines:', error);
-      const engineList = document.querySelector('#engine-listings ul');
-      engineList.innerHTML = '<li>Failed to load engines.</li>';
-    });
+  fetch('engines.json')
+  .then(response => response.json())
+  .then(data => {
+    allEngines = data.engines;
+    renderEngineList(allEngines);
+  })
+  .catch(error => {
+    const engineList = document.querySelector('#engine-listings ul');
+    engineList.innerHTML = '<li>Failed to load engines.</li>';
+  });
 }
 
 function renderEngineList(engines) {
